@@ -18,7 +18,7 @@ def index():
 @main.route('/blogs')
 @login_required
 def blogs():
-    all_blogs = Blog.query.order_by(db.desc(Blog.created_at)).limit(15)
+    all_blogs = Blog.query.all()
 
     return render_template('blogs.html', all_blogs=all_blogs)
 
