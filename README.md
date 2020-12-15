@@ -1,13 +1,13 @@
-#Title
+# Title
 Blogs-app
 
-#Description
+# Description
 E's blog is a personal blogging website where you can create and share your opinions and other users can read and comment on them. It also has random quotes that inspire the users. You can visit the live site on ** **
 
-#Author
+# Author
 Eid
 
-#Features
+# Features
 As a user of the web application you will be able to:
 
 See all blogs
@@ -20,7 +20,7 @@ Edit your profile i.e will be able to add a short bio about yourself and a profi
 CODEBEAT
 codebeat badge
 
-Getting started
+# Getting started
 Prerequisites
 python3.6
 virtual environment
@@ -68,7 +68,7 @@ The user may have some difficulty in profile handling and management since it's 
 
 
 
-License
+# License
 MIT License
 
 Copyright (c) 2020 Moringa EidAbdullahi
