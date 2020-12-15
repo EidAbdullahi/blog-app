@@ -2,7 +2,7 @@
 Blogs-app
 
 # Description
-E's blog is a personal blogging website where you can create and share your opinions and other users can read and comment on them. It also has random quotes that inspire the users. You can visit the live site on ** **
+Eid's blog is a personal blogging website where you can create and share your opinions and other users can read and comment on them. It also has random quotes that inspire the users. You can visit the live site on ** **
 
 # Author
 Eid
