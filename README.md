@@ -1,12 +1,13 @@
-*Title
+#Title
 Blogs-app
 
-Description
+#Description
 E's blog is a personal blogging website where you can create and share your opinions and other users can read and comment on them. It also has random quotes that inspire the users. You can visit the live site on ** **
 
-Author
+#Author
 Eid
-Features
+
+#Features
 As a user of the web application you will be able to:
 
 See all blogs
