@@ -13,7 +13,13 @@
     <p class="grey-text">By {{blog.user.username}}</p>
     <p>{{blog.content}}</p>
     <br><hr><br><br>
-    {% endfor%}
+    
+    <button type="button" class="btn btn-outline-success btn-sm"><a href="/comments/">View
+        comments</a></button>
+<button type="button" class="btn btn-outline-success btn-sm"><a href="/post/comment/new/{{blog.id}}">Add
+        comments</a></button>
+
+        {% endfor%}
 
  
 

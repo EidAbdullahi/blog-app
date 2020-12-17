@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from . import main
 from sqlalchemy import desc
-from ..models import Blog, User, Comment
+from ..models import Blog, User,Comment
 from ..requests import get_quote
 from ..forms import CommentForm, PostForm
 from flask_login import login_required, current_user
@@ -71,15 +71,22 @@ def new_comment(id):
         content = form.content.data
 
         new_comment = Comment(
-            blog_id=blog.id, comments=content, user=current_user)
+            blog_id=blog.id, content=content, user=current_user)
 
         new_comment.save_comment()
         print(new_comment)
-        return redirect(url_for('main.index', id=post.id))
+        return redirect(url_for('main.index'))
 
     return render_template('new_comment.html', comment_form=form)
 
+@main.route('/comments/')
+@login_required
+def comments():
+    all_comments = Comment.query.all()
 
+    print('our comments.........', all_comments)
+
+    return render_template('comments.html', all_comments = all_comments)
 
 
 

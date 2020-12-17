@@ -33,15 +33,22 @@ class ProdConfig(Config):
     '''
     Production configuration for child class
     '''
+class TestConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://access:Access@localhost/blogs_test'
 
 
 class DevConfig(Config):
     '''
     Development configuration for child class
     '''
+    class DevConfig(Config):
+        SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://access:Access@localhost/blogs'
+    DEBUG = True
+
     DEBUG = True
 
 config_options = {
 'development':DevConfig,
-'production':ProdConfig
+'production':ProdConfig,
+'test':TestConfig
 }
